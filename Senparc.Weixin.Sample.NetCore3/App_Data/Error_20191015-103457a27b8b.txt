@@ -1,0 +1,6 @@
+ExecptionMessage:Object reference not set to an instance of an object.
+Senparc.NeuChar
+   at Senparc.NeuChar.Entities.Request.RequestMessageTextKeywordHandler..ctor(IRequestMessageText requestMessage, Boolean caseSensitive)
+   at Senparc.NeuChar.Entities.Request.RequestMessageTextExtension.StartHandler(IRequestMessageText requestMessage, Boolean caseSensitive)
+   at Senparc.Weixin.MP.Sample.CommonService.CustomMessageHandler.CustomMessageHandler.OnTextRequest(RequestMessageText requestMessage) in D:\Work\qwe\selfStudy\WeiXinMPSDK-Developer333\WeiXinMPSDK-Developer\Samples\net45-mvc\Senparc.Weixin.MP.Sample.CommonService\MessageHandlers\CustomMessageHandler\CustomMessageHandler.cs:line 188
+   at Senparc.Weixin.Sample.NetCore3.Controllers.SignalRController.Post(PostModel postModel) in D:\Work\qwe\selfStudy\WeiXinMPSDK-Developer333\WeiXinMPSDK-Developer\Samples\netcore3.0-mvc\Senparc.Weixin.Sample.NetCore3\Controllers\SignalRController.cs:line 77

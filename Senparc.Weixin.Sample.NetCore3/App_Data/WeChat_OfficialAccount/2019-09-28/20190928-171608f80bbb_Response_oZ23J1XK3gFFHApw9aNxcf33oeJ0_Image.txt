@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <MsgType><![CDATA[image]]></MsgType>
+  <Image>
+    <MediaId><![CDATA[bB3oX2GZuK8OJZBC1DtOWkHltIzYLcvpM3Gnkpd4EmSs3lxb60hTC45Mxc-Zbvtq]]></MediaId>
+  </Image>
+  <ToUserName><![CDATA[oZ23J1XK3gFFHApw9aNxcf33oeJ0]]></ToUserName>
+  <FromUserName><![CDATA[gh_e9bf55a5630b]]></FromUserName>
+  <CreateTime>1569662088</CreateTime>
+</xml>

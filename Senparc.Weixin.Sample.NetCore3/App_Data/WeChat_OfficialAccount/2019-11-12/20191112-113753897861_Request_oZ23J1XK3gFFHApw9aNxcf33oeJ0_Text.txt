@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+  <ToUserName><![CDATA[wxc3a7e87e3d3cb81a]]></ToUserName>
+  <FromUserName><![CDATA[oZ23J1XK3gFFHApw9aNxcf33oeJ0]]></FromUserName>
+  <CreateTime>1348831123</CreateTime>
+  <MsgType><![CDATA[text]]></MsgType>
+  <Content><![CDATA[this is a new log2]]></Content>
+  <MsgId>123456739132239</MsgId>
+</xml>

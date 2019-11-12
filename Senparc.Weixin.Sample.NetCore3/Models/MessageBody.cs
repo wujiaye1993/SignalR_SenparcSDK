@@ -8,7 +8,7 @@ namespace Senparc.Weixin.Sample.NetCore3.Models
     public class MessageBody
     {
         /*
-         * 消息类，负责SignalR需要传递后端前端的信息
+         * 消息类，负责SignalR需要传递后端前端的信息 测试git的dev
          */
         
         //客服名
@@ -35,5 +35,7 @@ namespace Senparc.Weixin.Sample.NetCore3.Models
         //消息id，64位整型
         public long MsgId { get; set; }
         //public string CustomMessageFromWeixin { get; set; }
+
+        public int testGit { get; set; }
     }
 }

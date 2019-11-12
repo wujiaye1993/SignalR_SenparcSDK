@@ -152,12 +152,15 @@ namespace Senparc.Weixin.Sample.NetCore3.Controllers
                 var MsgId = textMessageFromWeixin.MsgId;        //消息id，64位，用于区分消息记录
                 //该条信息记录对象存储到数据库
 
-                var username = "小微同学";      
-                body.ToUserName = "公众号1：轻微通知"; //1、设定发给的公众号，后善：查WeChatMP表根据AppId获取Name
-                body.FromUserName = username;   //2、设定消息来自的人，即客户，后善：改根据OpenId获取客户的微信用户信息的Name，这需存储用户信息到数据库
+                var username = "小微同学";  //假设根据OpenId查找得到的客户名
+                body.CustomerName = username; //前端显示的客户名
+                body.ToUserName = AppId; //1、设定发给的公众号，后善：查WeChatMP表根据AppId获取Name
+                body.FromUserName = FromUserOpenId;   //2、设定消息来自的人，即客户，后善：改根据OpenId获取客户的微信用户信息的Name，这需找该OpenId是否重复，不重复
+                //创建客户对象并存储用户信息（完善Id，Name等）到数据库，重复直接根据OpenId获取客户的微信用户信息的Name
+                //只要给公众号发消息，就能获取你的OpenId（OpenId是公众号中普通用户的唯一标识，可以用来获取用户的信息）
                 body.ToKefuName = "客服1号" ;  //3、设定消息发给谁，即客服，后善：获取客服集合队伍，出栈，获取客服Id（OrchardUserId），根据Id获取客服Name
                 body.Content = contentFromWeixin;   //4、消息体
-                body.CreateTime = CreateTime;   //5、创建时间 ，完成
+                body.CreateTime = CreateTime.ToString("yyyyMMdd-HHmmss");   //5、创建时间 ，完成
 
                 body.TextName = username;       //设定显示在前端当前发信息的人，在该方法时，为微信的客户
                 
